@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should print addCategory component 1`] = `
+<Fragment>
+  <p />
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="input-div"
+    >
+      <input
+        name="input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <br />
+    <button
+      type="submit"
+    >
+      Añadir...
+    </button>
+  </form>
+</Fragment>
+`;
