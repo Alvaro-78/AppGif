@@ -1,12 +1,17 @@
 import React from 'react';
+import '@testing-library/jest-dom';
+
 import { shallow } from 'enzyme';
 import AddCategory from '../../components/AddCategory';
 
 describe('test component', () => {
-    const setCategories = () => {
-        return 'cualquier cosa';
-    };
-    const wrapper = shallow(<AddCategory setCategories={setCategories} />);
+    const setCategories = jest.fn();
+    let wrapper;
+
+    beforeEach(() => {
+        jest.clearAllMocks();
+        wrapper = shallow(<AddCategory setCategories={setCategories} />);
+    });
 
     it('should print addCategory component', () => {
         expect(wrapper).toMatchSnapshot();
@@ -18,5 +23,11 @@ describe('test component', () => {
         input.simulate('change', { target: { value } });
 
         expect(wrapper.find('p').text().trim()).toBe(value);
+    });
+
+    it('should/n send info freom submit', () => {
+        wrapper.find('form').simulate('submit', { preventDefault() {} });
+
+        expect(setCategories).not.toHaveBeenCalled();
     });
 });
