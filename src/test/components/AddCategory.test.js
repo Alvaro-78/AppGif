@@ -16,7 +16,7 @@ describe('test component', () => {
     });
 
     // print snapshot from component
-    it('should print addCategory component', () => {
+    it('should printed addCategory component', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
@@ -37,14 +37,13 @@ describe('test component', () => {
     });
 
     // test inputChange then submit send info and setCattegories has been called
-    it('should call setCategories and clean textBox', () => {
+    it('should been called setCategories and clean textBox', () => {
         const value = 'Hola Pepe';
 
         wrapper.find('input').simulate('change', { target: { value } });
         wrapper.find('form').simulate('submit', { preventDefault() {} });
 
         expect(setCategories).toHaveBeenCalled();
-        expect(setCategories).toHaveBeenCalledTimes(2);
 
         expect(wrapper.find('input').prop('value')).toBe('');
     });

@@ -25,3 +25,29 @@ exports[`test component should print addCategory component 1`] = `
   </form>
 </Fragment>
 `;
+
+exports[`test component should printed addCategory component 1`] = `
+<Fragment>
+  <p />
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="input-div"
+    >
+      <input
+        name="input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <br />
+    <button
+      type="submit"
+    >
+      Añadir...
+    </button>
+  </form>
+</Fragment>
+`;
