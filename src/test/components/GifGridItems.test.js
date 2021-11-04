@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import GifGridItem from '../../components/GifGridItem';
 
-describe('test component', () => {
+describe('test GifGridItems component', () => {
     // global vars
     const title = 'algo';
     const url = 'http://localhost:3000/';

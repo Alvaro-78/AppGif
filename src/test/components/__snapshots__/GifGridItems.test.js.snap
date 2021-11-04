@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test component should render component correctly 1`] = `
+exports[`test GifGridItems component should render component correctly 1`] = `
 <Fragment>
   <div
     className="card animate__animated animate__fadeIn"

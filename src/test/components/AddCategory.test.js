@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { shallow } from 'enzyme';
 import AddCategory from '../../components/AddCategory';
 
-describe('test component', () => {
+describe('test AddCategory component', () => {
     // calling jest.fn() we doing the same as a empty function
     const setCategories = jest.fn();
     let wrapper = shallow(<AddCategory setCategories={setCategories} />);

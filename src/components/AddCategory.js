@@ -10,7 +10,6 @@ const AddCategory = ({ setCategories }) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log('Llamando al setCategories', inputValue);
         // Recibimos por props el estado del componente padre y con el spred operator
         //  le pasamos el nuevo estado con el value del input.
         if (inputValue.trim().length > 2) {
