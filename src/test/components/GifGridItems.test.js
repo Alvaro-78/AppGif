@@ -23,7 +23,6 @@ describe('test component', () => {
     // test props from component
     it('should had same url and alt from props', () => {
         const img = wrapper.find('img');
-        console.log(img.prop('src'));
 
         expect(img.prop('src')).toBe(url);
         expect(img.prop('alt')).toBe(title);
@@ -32,7 +31,6 @@ describe('test component', () => {
     // test className
     it('should had style animate_fadeIn', () => {
         const div = wrapper.find('div');
-        console.log(div.prop('className'));
         const className = div.prop('className');
 
         expect(className.includes('animate__fadeIn')).toBe(true);
