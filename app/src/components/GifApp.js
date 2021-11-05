@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AddCategory from '../components/AddCategory';
+import AddCategory from './AddCategory';
 import GifGrid from './GifGrid';
 
 const GifApp = () => {
