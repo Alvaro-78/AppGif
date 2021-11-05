@@ -18,18 +18,13 @@ exports[`test GifGrid component should render component correctly 1`] = `
 </Fragment>
 `;
 
-exports[`test GifGrid component should show items when images are loaded useFetchGifs   1`] = `
+exports[`test GifGrid component should show items when images are loaded useFetchGifs 1`] = `
 <Fragment>
   <h3
     className="animate__animated animate__fadeI"
   >
     random
   </h3>
-  <p
-    className="animate__animated animate__flash"
-  >
-    Loading...
-  </p>
   <div
     className="card-grid"
   >
@@ -38,6 +33,12 @@ exports[`test GifGrid component should show items when images are loaded useFetc
       key="abc"
       title="Cualquiercosa"
       url="https://localhost/loquesea/cosa.jpg"
+    />
+    <GifGridItem
+      id="def"
+      key="def"
+      title="Cualquier otra cosa"
+      url="https://localhost/loquesea/otracosa.jpg"
     />
   </div>
 </Fragment>
