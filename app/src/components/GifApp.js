@@ -9,7 +9,7 @@ const GifApp = () => {
         <>
             <div className='header-title'>
                 <div>
-                    <h1 className='title'>GifApp</h1>
+                    <h1 className='title'>Gif App</h1>
                 </div>
             </div>
             <div>
